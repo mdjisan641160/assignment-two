@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: rgba(35, 14, 61, 1);
         }
        
         body{
@@ -24,7 +25,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #1A0B2E;
+            /* background-color: #1A0B2E; */
             padding: 20px 80px;
         }
 
@@ -76,7 +77,7 @@
 
         .hero-section {
             position: relative;
-            background-color: #1A0B2E;
+            /* background-color: #1A0B2E; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -200,7 +201,7 @@
         .about-section{
             padding: 100px 20px;
             text-align: center;
-            background: #1A0B2E;
+            /* background: #1A0B2E; */
         }
 
         .section-title{
@@ -242,34 +243,76 @@
             padding-bottom: 0;
         }
 /*Image icon style*/
-
-        .feature-img{
-            width: 50px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        .horizontal-card .feature-img{
-            margin-bottom: 0;
-            margin-right: 20px;
-            width: 40px;
-        }
+        /* .features-section{
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           width: 100%;
+           height: 900px;
+          
+            border: 1px solid yellow;
+            gap: 16px;
+           
+        } */
+       
+        
 /*grid layout fixed*/
 
        .features-grid{
         display: grid;
         grid-template-columns:repeat(3, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
         gap: 20px;
+        padding: 120px 200px;
         max-width: 1200px;
         margin: 0 auto;
        }
-
-       .feature-card .large-card{
+       .feature-card{
+        grid-column: span 1;
         grid-row: span 2;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.2);
        }
-
-       .feature-card .exclusive{
+       .feature-cards{
         grid-column: span 2;
+        grid-row: span 1;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.2);
+       }
+       .feature-cardss{
+         grid-column: span 2;
+        grid-row: span 1;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.2);
+       }
+       .feature-cardsss{
+         grid-column: span 2;
+        grid-row: span 1;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.2);
+       }
+       .feature-cardssss{
+         grid-column: span 1;
+        grid-row: span 1;
+        padding: 40px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.3);
+       }
+       .heading{
+        text-align: center;
+        font-size: 50px;;
+       }
+       .para{
+        text-align: justify;
        }
     </style>
 </head>
@@ -344,41 +387,58 @@
    </section> 
 
    <section class="features-section">
-    <div class="container">
-        <h2 class="section-title">Why Choose TechWave</h2>
-
+        <h2 class="heading">Why Choose TechWave</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <img src="Images/headphone.png" alt="Audio">
                 <h3>Premium Audio Quality</h3>
-                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering.</p>
+                <p class="para">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering.</p>
             </div>
-            <div class="feature-card horizontal">
+            <div class="feature-cards">
                 <img src="Images/device.png" alt="Mobile">
                 <div class="text-content">
                     <h3>Mobile Friendly</h3>
-                    <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+                    <p class="para">Listen on the go with seamless mobile experience and offline downloads.</p>
                 </div>
             </div>
-            <div class="feature-card horizontal">
+            <div class="feature-cardss horizontal">
                 <img src="Images/location.png" alt="Global">
                 <div class="text">
                     <h3>Global Community</h3>
-                    <p>Connect with Tech enthusiasts from over 120 countries worldwide.</p>
+                    <p class="para">Connect with Tech enthusiasts from over 120 countries worldwide.</p>
                 </div>
             </div>
-            <div class="feature-card">
+            <div class="feature-cardsss">
                 <img  src="Images/" alt="Interview">
                 <h3>Exclusive Interviews</h3>
-                <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversasions you won't find anywhere else.</p>
+                <p class="para">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversasions you won't find anywhere else.</p>
             </div>
 
-            <div class="feature-card">
+            <div class="feature-cardssss">
                 <img class="feature-img" src="Images/resource.png" alt="Resource">
                 <h3>Rich Reasources</h3>
-                <p>Access show notes, transcript and additional learning materials for every episode.</p>
+                <p class="para">Access show notes, transcript and additional learning materials for every episode.</p>
             </div>
         </div>
+   </section>
+   <section>
+    <div>
+        <h2>Featured Episodes</h2>
+    </div>
+    <div>
+        <video src=""></video>
+        <h3>The Future of AI in Everyday Life</h3>
+        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+    </div>
+    <div>
+        <video src=""></video>
+        <h3>The Future of AI in Everyday Life</h3>
+        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+    </div>
+    <div>
+        <video src=""></video>
+        <h3>The Future of AI in Everyday Life</h3>
+        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
     </div>
    </section>
 </body>
