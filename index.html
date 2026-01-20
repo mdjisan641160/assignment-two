@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -21,7 +24,7 @@
             color: white;
         }
 
-        .navber{
+        .navbar{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -271,7 +274,7 @@
         transition: 0.3s;
         box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.2);
        }
-       .feature-cardss{
+       .feature-card-1{
          grid-column: span 2;
         grid-row: span 1;
         padding: 40px 20px;
@@ -297,13 +300,10 @@
        }
        .heading{
         text-align: center;
-        font-size: 50px;;
+        font-size: 50px;
        }
        .para{
         text-align: justify;
-       }
-       .meaning{
-        height: 1226px;
        }
        .vd-tag{
         display: flex;
@@ -311,44 +311,88 @@
         gap: 40px;
         margin-top: 40px;
         background-color: rgba(37, 13, 68, 1);
+       
        }
        
        .vd-one{
         width: 380px;
         height: 214px;
-         gap: 30px;
+        gap: 30px;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
        }
        .para-1{
         width: 332px;
         height: 72px;
         margin-top: 12px;
         font-size: 16px;
-        text-align: center;
+        text-align: justify;
        }
        .vd-two{
         width: 380px;
         height: 214px;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
        }
        .vd-three{
         width: 380px;
         height: 214px;
+        box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
        }
        .margin{
         margin: 24px 24px 0 24px;
        }
+       .various-color{
+        color: rgba(0, 255, 136, 1);
+       }
+       .least-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 200px;
+        width: 100%px;
+        height: 378px;
+
+       }
+       .least-one{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        width: 1200px;
+        height: 280px;
+        padding-top: 40px;
+       }
+       .headings{
+        margin-top: 120px;
+        font-size: 50px;
+       }
+       .host-details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       }
+       .social-icons{
+        display: flex;
+        gap: 15px;
+        padding-bottom: 25px;
+        margin-right: 650px;
+       }
+       .font{
+        font-size: 32px;
+        margin-bottom: 16px;
+       }
+       .footer-bg{
+        width: 100%;
+        height: 500px;
+        background-image: url("Images/footer-bg.png");
+       }
     </style>
 </head>
 <body>
-    <nav class="navber">
+    <nav class="navbar">
         <div class="logo">Tech <span>Wave</span></div>
-
-        <div class="menu" id="mobile-menu">
-           
-           <span></span>
-           <span></span>
-           <span></span>
-          
-        </div>
         <ul class="nav-links" id="nav-list">
             <li>About</li>
             <li>Episodes</li>
@@ -423,7 +467,7 @@
                     <p class="para">Listen on the go with seamless mobile experience and offline downloads.</p>
                 </div>
             </div>
-            <div class="feature-cardss horizontal">
+            <div class="feature-card-1 horizontal">
                 <img src="Images/location.png" alt="Global">
                 <div class="text">
                     <h3>Global Community</h3>
@@ -453,6 +497,7 @@
         <div class="margin">
         <h3>The Future of AI in Everyday Life</h3>
         <p class="para-1">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+        <span class="various-color"><img src="Images/clock.png" alt=""> 42 min</span>
         </div>
     </div>
     <div class="vd-2">
@@ -460,6 +505,7 @@
          <div class="margin">
         <h3>The Future of AI in Everyday Life</h3>
         <p class="para-1">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+        <span class="various-color"><img src="Images/clock.png" alt=""> 35 min</span>
         </div>
     </div>
     <div class="vd-3">
@@ -467,9 +513,44 @@
         <div class="margin">
         <h3>The Future of AI in Everyday Life</h3>
         <p class="para-1">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+        <span class="various-color"><img src="Images/clock.png" alt=""> 51 min</span>
         </div>
     </div>
     </div>
    </section>
+   <section>
+    <div class="least-items">
+        <h2 class="headings">Meet the Host</h2>
+        <div class="least-one">
+            <img src="Images/host.png" alt="">
+           <div class="host-details">
+                <h3 class="font">Alex Kumar</h3>
+                <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+           </div>
+        </div>
+            <div class="social-icons">
+                <img src="Images/linkedin.png" alt="">
+                <img src="Images/x.png" alt="">
+                <img src="Images/instagram.png" alt="">
+                <img src="Images/youtube.png" alt="">
+            </div>
+    </div>
+   </section>
+   <footer>
+    <div class="footer-bg">
+        <h2 class="heading">TachWave</h2>
+        <ul>
+        <li><img src="Images/spotify.png" alt="">Spotify</li>
+        <li><img src="Images/apple-podcast.png" alt="">Apple Podcasts</li>
+        <li><img src="images/youtube-podcast.png" alt="">YouTube</li>
+        <li><img src="Images/twitter.png" alt="">Twitter</li>
+    </ul>
+    </div>
+    <div>
+        
+    </div>
+   
+    <p>© 2026 TechWave Podcast. All rights reserved.</p>
+   </footer>
 </body>
 </html>
