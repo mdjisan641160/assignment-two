@@ -128,7 +128,7 @@
             width: 350px;
             height: 350px;
             margin:0 auto 30px;
-           
+           border-radius: 50%;;
         }
  
 
@@ -369,6 +369,7 @@
         margin-top: 120px;
         font-size: 50px;
        }
+       
        .host-details{
         display: flex;
         flex-direction: column;
@@ -400,7 +401,7 @@
         position: absolute;
         font-size: 50px;;
         text-align: center;
-        margin: 80px 0px 0px 650px;
+        margin: 80px 0px 0px 500px;
        }
        .footer-bg ul{
         display: flex;
@@ -431,6 +432,23 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      @media screen and (max-width: 576px){
+        body{
+            
+        }
+         header{
+
+        }
+        main{
+
+        }
+        footer{
+            
+        }
+      }
+      @media screen and (min-width: 576px) and (max-width: 992px){
+        body, header, main, footer;
+      }
     </style>
 </head>
 <body>
@@ -457,16 +475,12 @@
             </div>
             <h1 class="hero-title">TechWave</h1>
             <p class="hero-description">Your daily does of tech insights, produtivity hacks, and personal growth</p>
-
             <div class="hero-action">
-                <a href="#"  class="btn-spotify"> 
-                <img src="Images/spotify.png" alt="Listen on spotify">
-                <i class="btn">Listen On Spotify</i>
-                </a>
-
+                <a href="#" class="btn-spotify">
+                   <li class="btn"><img src="Images/spotify.png" alt="Listen on spotify">Listen On Spotify</li>
+               </a>
                 <a href="#" class="btn-subscribe">
-                    <img src="Images/message.png" alt="Subscribe">
-                    <i class="btn">Subscribe</i>
+                    <li class="btn"><img src="Images/message.png" alt="Subscribe"> Subscribe</li>
                 </a>
             </div>
         </div>
